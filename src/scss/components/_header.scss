@@ -4,10 +4,11 @@
   left: 0;
   width: 100%;
   z-index: 2;
-  height: 100px;
   background-color: var(--black-025-color);
 
   &__container {
+    padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
