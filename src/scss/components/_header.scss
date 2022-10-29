@@ -13,4 +13,19 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__nav {
+    width: 55%;
+
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &-link {
+      font-size: 18px;
+      color: var(--white-color);
+    }
+  }
 }
