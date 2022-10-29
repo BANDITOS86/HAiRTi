@@ -1,5 +1,18 @@
 .hero {
 
+  &__slide {
+    height: 100vh;
+  }
+
+  &__picture {
+    height: 100vh;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100vh;
+  }
+
   &__wrapper {
     -webkit-animation-name: resize;
     animation-name: resize;
@@ -21,9 +34,5 @@
       -webkit-transform: scale(1.1);
       transform: scale(1.1);
     }
-  }
-
-  &__image {
-    width: 100%;
   }
 }
