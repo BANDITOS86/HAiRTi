@@ -1,4 +1,92 @@
 .about {
   padding-top: 50px;
   padding-bottom: 50px;
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: var(--black-color);
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-img {
+      width: 38px;
+      height: 38px;
+      fill: var(--dodger-blue);
+    }
+
+    &-conditions {
+      font-size: 24px;
+      color: var(--black-color);
+      text-transform: uppercase;
+    }
+  }
+
+  &__sale {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-text {
+      font-weight: 700;
+      font-size: 22px;
+      color: var(--torch-red-color);
+      text-transform: uppercase;
+
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+    }
+  }
+
+  &__goto {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-text {
+      margin-bottom: 20px;
+      font-size: 18px;
+      color: var(--black-color);
+      text-transform: uppercase;
+    }
+
+    &-arrow {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+
+      &-img {
+        width: 64px;
+        height: 64px;
+        fill: var(--outrageous-orange-color);
+
+        &:not(:last-child) {
+          margin-right: 20px;
+        }
+      }
+    }
+
+    &-instagram {
+      font-size: 32px;
+      color: var(--outrageous-orange-color);
+    }
+  }
+
+  &__social {
+    margin: 0 auto;
+    width: 120px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+  }
 }
