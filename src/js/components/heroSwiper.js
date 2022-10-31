@@ -1,7 +1,7 @@
 import Swiper, { Pagination, Autoplay, Keyboard, A11y, Navigation, EffectFade } from 'swiper';
 Swiper.use([Pagination, Autoplay, Keyboard, A11y, Navigation, EffectFade]);
 
-const heroSwiper = document.querySelector('.hero-swiper');
+let heroSwiper = document.querySelector('.hero-swiper');
 if (heroSwiper) {
   heroSwiper = new Swiper('.hero-swiper', {
     allowTouchMove: false,
