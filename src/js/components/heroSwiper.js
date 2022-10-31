@@ -10,6 +10,6 @@ if (heroSwiper) {
     speed: 8000,
     autoplay: {
       delay: 5000
-    }
+    },
   });
 }
