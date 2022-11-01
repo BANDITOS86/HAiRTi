@@ -1,5 +1,5 @@
-import Swiper, { Pagination, Autoplay, Keyboard, A11y, Navigation, EffectFade } from 'swiper';
-Swiper.use([Pagination, Autoplay, Keyboard, A11y, Navigation, EffectFade]);
+import Swiper, { Autoplay, EffectFade } from 'swiper';
+Swiper.use([Autoplay, EffectFade]);
 
 let heroSwiper = document.querySelector('.hero-swiper');
 if (heroSwiper) {

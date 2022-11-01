@@ -1,0 +1,14 @@
+.examples {
+  &__slide {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__picture {
+    &-image {
+      width: 900px;
+      height: 800px;
+      border-radius: 10px;
+    }
+  }
+}
