@@ -4,6 +4,7 @@ Swiper.use([Pagination, Keyboard, A11y, Navigation]);
 let exemplesSwiper = document.querySelector('.examples-swiper');
 if (exemplesSwiper) {
   exemplesSwiper = new Swiper('.examples-swiper', {
-    
+    spaceBetween: 30,
+    slidesPerView: 1,
   });
 }

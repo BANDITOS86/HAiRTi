@@ -1,7 +1,11 @@
 .examples {
+
   &__slide {
-    display: flex;
-    justify-content: center;
+    width: 900px;
+  }
+
+  &__wrapper {
+    padding-left: max(15%, calc((100% - var(--content-width)) / 2));
   }
 
   &__picture {
