@@ -4,10 +4,8 @@
 
   &__slide {
     width: 900px;
-  }
-
-  &__wrapper {
-    padding-left: max(15%, calc((100% - var(--content-width)) / 2));
+    display: flex;
+    justify-content: center;
   }
 
   &__picture {

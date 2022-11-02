@@ -6,5 +6,9 @@ if (exemplesSwiper) {
   exemplesSwiper = new Swiper('.examples-swiper', {
     spaceBetween: 30,
     slidesPerView: 1,
+    navigation: {
+      nextEl: ".examples__btn-next",
+      prevEl: ".examples__btn-prev",
+    },
   });
 }
