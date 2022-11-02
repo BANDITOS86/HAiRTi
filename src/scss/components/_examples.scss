@@ -15,4 +15,27 @@
       border-radius: 10px;
     }
   }
+
+  &__btn {
+    position: absolute;
+    top: 45%;
+    width: 62px;
+    height: 125px;
+    z-index: 1;
+
+    &-prev {
+      left: 17%;
+      transform: rotate(180deg);
+    }
+
+    &-next {
+      right: 17%;
+    }
+
+    &-img {
+      fill: transparent;
+      stroke: var(--dodger-blue);
+      filter: drop-shadow( 0px 0px 3px black);
+    }
+  }
 }
