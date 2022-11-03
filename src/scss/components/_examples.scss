@@ -37,9 +37,17 @@
       height: 125px;
       fill: transparent;
       stroke: var(--dodger-blue);
-      filter: drop-shadow( 0px 0px 3px black);
+      filter: drop-shadow(0px 0px 3px black);
+      transition: filter 0.3s ease-in-out;
+    }
 
-      
+    &:active .examples__btn-img {
+      filter: drop-shadow(0px 0px 0px black);
+    }
+
+    &.swiper-button-disabled .examples__btn-img {
+      stroke: var(--grey-color);
+      filter: drop-shadow(0px 0px 0px black);
     }
   }
 }
