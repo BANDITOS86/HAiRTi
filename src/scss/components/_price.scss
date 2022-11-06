@@ -1,0 +1,49 @@
+.price {
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-bottom: 5px;
+    padding: 20px;
+    max-width: max-content;
+    font-size: 28px;
+    border-radius: 10px;
+    background-color: var(--night-rider-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    margin-bottom: 5px;
+    padding: 15px;
+    max-width: max-content;
+    font-size: 26px;
+    border-radius: 10px;
+    background-color: var(--night-rider-05-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+  }
+
+  &__descr {
+    margin-bottom: 20px;
+    padding: 10px;
+    max-width: max-content;
+    font-weight: 700;
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: var(--night-rider-05-color);
+    color: var(--white-color);
+    text-transform: uppercase;
+  }
+
+  &__wrap {
+    display: flex;
+    gap: 50px;
+  }
+}
