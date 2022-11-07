@@ -42,11 +42,9 @@
     text-transform: uppercase;
   }
 
-  &__wrap {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
-    gap: 50px;
+  &__list {
+    margin-bottom: 20px;
+    width: 50%;
   }
 
   &__item {
@@ -79,5 +77,14 @@
         font-size: 18px;
       }
     }
+  }
+
+  &__bonus {
+    width: 35%;
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--night-rider-color);
+    text-transform: uppercase;
+    text-align: center;
   }
 }
