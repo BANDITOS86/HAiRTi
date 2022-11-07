@@ -80,11 +80,46 @@
   }
 
   &__bonus {
+    margin-bottom: 20px;
     width: 35%;
     font-weight: 700;
     font-size: 32px;
     color: var(--night-rider-color);
     text-transform: uppercase;
     text-align: center;
+  }
+
+  &__advantages {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &-img {
+        margin-right: 20px;
+        width: 102px;
+        height: 102px;
+        fill: var(--las-palmas-color);
+      }
+
+      &-wrap {
+
+        &-title {
+          margin-bottom: 15px;
+          font-size: 22px;
+          color: var(--night-rider-color);
+          text-transform: uppercase;
+        }
+
+        &-descr {
+          font-size: 16px;
+          color: var(--night-rider-color);
+          text-transform: uppercase;
+        }
+      }
+    }
   }
 }
