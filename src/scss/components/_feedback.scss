@@ -6,6 +6,22 @@
     margin-bottom: 25px;
   }
 
+  &__form {
+    display: flex;
+
+    & .just-validate-error-label {
+      position: absolute;
+      top: -20px;
+      left: 20px;
+      font-size: 14px;
+      color: var(--torch-red-color) !important;
+    }
+  }
+
+  &__label {
+    position: relative;
+  }
+
   &__input {
     padding: 9px 24px;
     width: 270px;
