@@ -1,4 +1,5 @@
 .examples {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
 
@@ -13,41 +14,65 @@
       width: 900px;
       height: 800px;
       border-radius: 10px;
+
+      @include small-tablet {
+        & {
+          height: 600px;
+        }
+      }
+
+      @include mobile {
+        & {
+          height: 320px;
+        }
+      }
+    }
+  }
+
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+
+    @include high-desktop {
+      & {
+        width: 100%;
+      }
     }
   }
 
   &__btn {
-    position: absolute;
-    top: 45%;
-    width: 62px;
-    height: 125px;
+    width: 28px;
+    height: 28px;
+    border-radius: 100px;
+    border: 2px solid var(--dodger-blue);
     z-index: 1;
 
     &-prev {
-      left: 9%;
+      left: 7%;
       transform: rotate(180deg);
     }
 
     &-next {
-      right: 9%;
+      right: 7%;
     }
 
     &-img {
-      width: 62px;
-      height: 125px;
+      width: 9px;
+      height: 24px;
       fill: transparent;
       stroke: var(--dodger-blue);
-      filter: drop-shadow(0px 0px 3px black);
       transition: filter 0.3s ease-in-out;
-    }
-
-    &:active .examples__btn-img {
-      filter: drop-shadow(0px 0px 0px black);
     }
 
     &.swiper-button-disabled .examples__btn-img {
       stroke: var(--grey-color);
-      filter: drop-shadow(0px 0px 0px black);
+    }
+
+    &.swiper-button-disabled {
+      border-color: var(--grey-color);
     }
   }
 }
