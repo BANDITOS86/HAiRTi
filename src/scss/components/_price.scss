@@ -17,6 +17,14 @@
     background-color: var(--night-rider-color);
     color: var(--white-color);
     text-transform: uppercase;
+
+    @include mobile {
+      & {
+        padding: 12px;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
   }
 
   &__subtitle {
@@ -28,6 +36,14 @@
     background-color: var(--night-rider-05-color);
     color: var(--white-color);
     text-transform: uppercase;
+
+    @include mobile {
+      & {
+        padding: 10px;
+        font-size: 18px;
+        text-align: center;
+      }
+    }
   }
 
   &__descr {
@@ -40,11 +56,31 @@
     background-color: var(--night-rider-05-color);
     color: var(--white-color);
     text-transform: uppercase;
+
+    @include mobile {
+      & {
+        padding: 5px;
+        font-size: 22px;
+        text-align: center;
+      }
+    }
   }
 
   &__list {
     margin-bottom: 40px;
     width: 50%;
+
+    @include high-tablet {
+      & {
+        width: 90%;
+      }
+
+      @include mobile {
+        & {
+          width: 100%;
+        }
+      }
+    }
   }
 
   &__item {
@@ -57,6 +93,12 @@
     &-service {
       font-weight: 700;
       font-size: 26px;
+
+      @include mobile {
+        & {
+          font-size: 16px;
+        }
+      }
     }
 
     &-dot {
@@ -66,15 +108,33 @@
       flex-grow: 1;
       height: 24px;
       border-bottom: 2px dotted var(--grey-color);
+
+      @include mobile {
+        & {
+          height: 18px;
+        }
+      }
     }
 
     &-price {
       font-weight: 700;
       font-size: 26px;
 
+      @include mobile {
+        & {
+          font-size: 18px;
+        }
+      }
+
       &--micro {
         margin-bottom: 10px;
         font-size: 18px;
+
+        @include mobile {
+          & {
+            font-size: 14px;
+          }
+        }
       }
     }
   }
@@ -87,6 +147,18 @@
     color: var(--night-rider-color);
     text-transform: uppercase;
     text-align: center;
+
+    @include high-tablet {
+      & {
+        font-size: 22px;
+      }
+    }
+
+    @include mobile {
+      & {
+        width: 100%;
+      }
+    }
   }
 
   &__advantages {
@@ -94,15 +166,35 @@
     align-items: center;
     justify-content: space-between;
 
+    @include high-tablet {
+      & {
+        flex-direction: column;
+        width: 290px;
+      }
+    }
+
     &-item {
       display: flex;
       align-items: center;
+
+      @include high-tablet {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
 
       &-img {
         margin-right: 20px;
         width: 102px;
         height: 102px;
         fill: var(--las-palmas-color);
+
+        @include high-tablet {
+          & {
+            width: 64px;
+            height: 64px;
+          }
+        }
       }
 
       &-wrap {
@@ -112,12 +204,25 @@
           font-size: 22px;
           color: var(--night-rider-color);
           text-transform: uppercase;
+
+          @include high-tablet {
+            & {
+              margin-bottom: 5px;
+              font-size: 18px;
+            }
+          }
         }
 
         &-descr {
           font-size: 16px;
           color: var(--night-rider-color);
           text-transform: uppercase;
+
+          @include high-tablet {
+            & {
+              font-size: 14px;
+            }
+          }
         }
       }
     }
