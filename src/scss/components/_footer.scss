@@ -1,0 +1,55 @@
+.footer {
+  background-color: var(--dodger-blue);
+
+  &__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__address {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: var(--night-rider-color);
+
+    @include mobile {
+      & {
+        font-size: 22px;
+      }
+    }
+  }
+
+  &__mode {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--night-rider-color);
+  }
+
+  &__tel {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--night-rider-color);
+  }
+
+  &__mail {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    color: var(--night-rider-color);
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+  }
+}

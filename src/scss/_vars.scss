@@ -1,0 +1,21 @@
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Open Sans", sans-serif;
+  --content-width: 1280px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --white-color: #ffffff;
+  --night-rider-color: #333333;
+  --night-rider-05-color: rgba(51, 51, 51, .6);
+  --black-color: #000000;
+  --black-025-color: rgba(0, 0, 0, 0.25);
+  --dodger-blue: #2F88FF;
+  --outrageous-orange-color: #F05228;
+  --torch-red-color: #E80225;
+  --grey-color: #999999;
+  --las-palmas-color: #BDD03E;
+}
