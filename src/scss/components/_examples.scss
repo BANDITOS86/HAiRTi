@@ -12,7 +12,7 @@
   &__picture {
     &-image {
       width: 900px;
-      height: 800px;
+      height: 900px;
       border-radius: 10px;
 
       @include small-tablet {
@@ -23,7 +23,7 @@
 
       @include mobile {
         & {
-          height: 320px;
+          height: 360px;
         }
       }
     }

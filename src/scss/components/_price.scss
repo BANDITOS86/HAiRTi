@@ -47,7 +47,7 @@
   }
 
   &__descr {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     padding: 10px;
     max-width: max-content;
     font-weight: 700;
@@ -56,6 +56,10 @@
     background-color: var(--night-rider-05-color);
     color: var(--white-color);
     text-transform: uppercase;
+
+    &:nth-child(2n) {
+      margin-bottom: 20px;
+    }
 
     @include mobile {
       & {
